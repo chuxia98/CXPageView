@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CXPageView_Example' do
+  pod 'CXPageView', :path => '../'
+
+  target 'CXPageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
