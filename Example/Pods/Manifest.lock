@@ -1,0 +1,16 @@
+PODS:
+  - CXPageView (0.1.0)
+
+DEPENDENCIES:
+  - CXPageView (from `../`)
+
+EXTERNAL SOURCES:
+  CXPageView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CXPageView: 3ca92052f05b15e7b18e4eb2a8441ecef955019b
+
+PODFILE CHECKSUM: ad3ce86a978313e5c233576327ffd78a1bde7436
+
+COCOAPODS: 1.1.0.rc.2
