@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+示例程序，后面慢慢添加
 
 ## Requirements
 
@@ -22,7 +22,7 @@ pod "CXPageView"
 
 ## Author
 
-chuxia98, 875390793@qq.com
+chuxia98, 875390797@qq.com
 
 ## License
 

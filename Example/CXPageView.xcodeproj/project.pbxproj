@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F8A4D01E261C8800F05B4D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8A4CF1E261C8800F05B4D /* Extension.swift */; };
 		2AB3C365CEA3ECEE0CC68DDE /* Pods_CXPageView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4CA9DDA6D7C521FDFBDEFD /* Pods_CXPageView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F8A4CF1E261C8800F05B4D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		09FFB071238DCFF24D53275E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3A4CA9DDA6D7C521FDFBDEFD /* Pods_CXPageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXPageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4677280D35973037B8AF8C89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		607FACD21AFB9204008FA782 /* Example for CXPageView */ = {
 			isa = PBXGroup;
 			children = (
+				04F8A4CF1E261C8800F05B4D /* Extension.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F8A4D01E261C8800F05B4D /* Extension.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

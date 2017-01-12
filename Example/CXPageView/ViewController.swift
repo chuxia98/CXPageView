@@ -7,12 +7,33 @@
 //
 
 import UIKit
+//import CXPageStyle
+import CXPageView
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    
+        super.viewDidLoad()
+        
+        let titles = ["游玩", "户外", "明星", "游戏"];
+        
+        var childVcs = [UIViewController]()
+        
+        for _ in 0...titles.count {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor.randomColor()
+            childVcs .append(vc)
+        }
+        
+        let style = CXPageStyle()
+        
+        let pageView = CXPageView(view.bounds, titles, childVcs, self, style)
+        
+        view .addSubview(pageView)
+    
     }
 
     override func didReceiveMemoryWarning() {
