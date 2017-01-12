@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import CXPageStyle
 import CXPageView
 
 class ViewController: UIViewController {
