@@ -7,14 +7,12 @@
 //
 
 import UIKit
+
 import CXPageView
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-    
         super.viewDidLoad()
         
         let titles = ["游玩", "户外", "明星", "游戏"];
@@ -27,11 +25,11 @@ class ViewController: UIViewController {
             childVcs .append(vc)
         }
         
-        let style = CXPageStyle()
+//        let style = Cxtit
         
-        let pageView = CXPageView(view.bounds, titles, childVcs, self, style)
+//        let pageView = CXPageView(view.bounds, titles, childVcs, self, style)
         
-        view .addSubview(pageView)
+//        view .addSubview(pageView)
     
     }
 
