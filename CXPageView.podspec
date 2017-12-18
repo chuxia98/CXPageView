@@ -30,7 +30,7 @@ CXPageView 的封装
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CXPageView/Classes/**/*'
+  s.source_files = 'CXPageView/CXPageView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CXPageView' => ['CXPageView/Assets/*.png']
