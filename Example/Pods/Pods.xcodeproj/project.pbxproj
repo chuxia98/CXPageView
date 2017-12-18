@@ -15,6 +15,7 @@
 		5CFC84CBECBC8CAEF5C38488A07C5B98 /* Pods-CXPageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F3688CBA134E0C157A795D28313782 /* Pods-CXPageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64B8E8F6806CF559FA809FC9A563AEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		722C213B0A08D5598866C24A4DF8D02D /* CXPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F94E93ED2FC50435024659EFDC5B63 /* CXPageView-dummy.m */; };
+		B90D112C1FE7A0AF0016DFFC /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90D112B1FE7A0AF0016DFFC /* UIColor-Extension.swift */; };
 		BFF414754AE31567EFBE6B4352881BF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C3E0A27E3753FBEBCECEE9A8B01AFC7D /* Pods-CXPageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E625E26C0B877862E0CD633456706CC1 /* Pods-CXPageView_Tests-dummy.m */; };
 		D058D5F41DC8AA5CD89C2A976C97E643 /* CXContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E24771DE6B544A4A24AFDC44BED8E08 /* CXContentView.swift */; };
@@ -56,6 +57,7 @@
 		945369DD208B0ABF6036F8FE56AC325E /* CXPageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXPageView-prefix.pch"; sourceTree = "<group>"; };
 		9D3CF8C894A76AFB210E28E6314C3DC4 /* Pods-CXPageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CXPageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2444D92FF1CBCF321B915A06691E2BC /* Pods-CXPageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CXPageView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B90D112B1FE7A0AF0016DFFC /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		C1F05C7411FE1CA4A20D3EFB1FDE3DB3 /* Pods-CXPageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CXPageView_Example-umbrella.h"; sourceTree = "<group>"; };
 		C88E898C06CE2ED19DCA6FEAD69B07AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC33B7C56F44A0878C9BD00DC0E40136 /* CXPageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXPageView-umbrella.h"; sourceTree = "<group>"; };
@@ -197,10 +199,11 @@
 		BEA8927A33B9870D1CDB10D4461EDE3A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0E24771DE6B544A4A24AFDC44BED8E08 /* CXContentView.swift */,
-				180DD65A455945A3127F02591F3869D0 /* CXPageView.swift */,
 				7298925ED149BADC71F5F6178342BC92 /* CXPageStyle.swift */,
+				180DD65A455945A3127F02591F3869D0 /* CXPageView.swift */,
 				80E5F08660BF50B330714AD348CD26C6 /* CXTitleView.swift */,
+				0E24771DE6B544A4A24AFDC44BED8E08 /* CXContentView.swift */,
+				B90D112B1FE7A0AF0016DFFC /* UIColor-Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D058D5F41DC8AA5CD89C2A976C97E643 /* CXContentView.swift in Sources */,
+				B90D112C1FE7A0AF0016DFFC /* UIColor-Extension.swift in Sources */,
 				722C213B0A08D5598866C24A4DF8D02D /* CXPageView-dummy.m in Sources */,
 				4864C075082234BF1C336A4C3CE6CE55 /* CXPageView.swift in Sources */,
 				E3668C45363609F4A1F72783E73AED12 /* CXPageStyle.swift in Sources */,
