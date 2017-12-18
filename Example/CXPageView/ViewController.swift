@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import CXPageView
 
 class ViewController: UIViewController {
@@ -25,12 +24,10 @@ class ViewController: UIViewController {
             childVcs .append(vc)
         }
         
-//        let style = Cxtit
-        
-//        let pageView = CXPageView(view.bounds, titles, childVcs, self, style)
-        
-//        view .addSubview(pageView)
-    
+        let style = CXPageStyle()
+        let pageView = CXPageView(view.bounds, titles, childVcs, self, style)
+        view .addSubview(pageView)
+
     }
 
     override func didReceiveMemoryWarning() {

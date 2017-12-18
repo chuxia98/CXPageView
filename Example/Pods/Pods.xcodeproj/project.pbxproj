@@ -15,12 +15,11 @@
 		5CFC84CBECBC8CAEF5C38488A07C5B98 /* Pods-CXPageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F3688CBA134E0C157A795D28313782 /* Pods-CXPageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64B8E8F6806CF559FA809FC9A563AEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		722C213B0A08D5598866C24A4DF8D02D /* CXPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F94E93ED2FC50435024659EFDC5B63 /* CXPageView-dummy.m */; };
-		B52FFEEDC750E33995C119F4E9BF3BC2 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743A472E4D84E26F3D69AF69A7092F6 /* UIColor-Extension.swift */; };
 		BFF414754AE31567EFBE6B4352881BF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C3E0A27E3753FBEBCECEE9A8B01AFC7D /* Pods-CXPageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E625E26C0B877862E0CD633456706CC1 /* Pods-CXPageView_Tests-dummy.m */; };
 		D058D5F41DC8AA5CD89C2A976C97E643 /* CXContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E24771DE6B544A4A24AFDC44BED8E08 /* CXContentView.swift */; };
 		D78A0848C44C79121531D8EC99C5B7A9 /* CXPageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC33B7C56F44A0878C9BD00DC0E40136 /* CXPageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3668C45363609F4A1F72783E73AED12 /* CXTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298925ED149BADC71F5F6178342BC92 /* CXTitleStyle.swift */; };
+		E3668C45363609F4A1F72783E73AED12 /* CXPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298925ED149BADC71F5F6178342BC92 /* CXPageStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +45,7 @@
 		62F3688CBA134E0C157A795D28313782 /* Pods-CXPageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CXPageView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6373301095218A8B8B6E13E73D72709A /* Pods-CXPageView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CXPageView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		69805174AA297D45A4BC612A41B57CBB /* Pods-CXPageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CXPageView_Tests.modulemap"; sourceTree = "<group>"; };
-		7298925ED149BADC71F5F6178342BC92 /* CXTitleStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CXTitleStyle.swift; sourceTree = "<group>"; };
-		7743A472E4D84E26F3D69AF69A7092F6 /* UIColor-Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		7298925ED149BADC71F5F6178342BC92 /* CXPageStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CXPageStyle.swift; sourceTree = "<group>"; };
 		80E5F08660BF50B330714AD348CD26C6 /* CXTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CXTitleView.swift; sourceTree = "<group>"; };
 		8AB646510F055B323F9A08394E4D06A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADDE40FCFAB91804E59836C5B19EF7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,9 +199,8 @@
 			children = (
 				0E24771DE6B544A4A24AFDC44BED8E08 /* CXContentView.swift */,
 				180DD65A455945A3127F02591F3869D0 /* CXPageView.swift */,
-				7298925ED149BADC71F5F6178342BC92 /* CXTitleStyle.swift */,
+				7298925ED149BADC71F5F6178342BC92 /* CXPageStyle.swift */,
 				80E5F08660BF50B330714AD348CD26C6 /* CXTitleView.swift */,
-				7743A472E4D84E26F3D69AF69A7092F6 /* UIColor-Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -324,6 +321,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					10CE0B24359CCA4701A02C92D54935E8 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -352,9 +354,8 @@
 				D058D5F41DC8AA5CD89C2A976C97E643 /* CXContentView.swift in Sources */,
 				722C213B0A08D5598866C24A4DF8D02D /* CXPageView-dummy.m in Sources */,
 				4864C075082234BF1C336A4C3CE6CE55 /* CXPageView.swift in Sources */,
-				E3668C45363609F4A1F72783E73AED12 /* CXTitleStyle.swift in Sources */,
+				E3668C45363609F4A1F72783E73AED12 /* CXPageStyle.swift in Sources */,
 				55471069A359B9E6A0F1CD16A9681D81 /* CXTitleView.swift in Sources */,
-				B52FFEEDC750E33995C119F4E9BF3BC2 /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +457,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -598,7 +600,8 @@
 				PRODUCT_NAME = CXPageView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

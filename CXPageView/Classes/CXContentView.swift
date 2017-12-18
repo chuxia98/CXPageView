@@ -10,7 +10,7 @@ import UIKit
 
 private let kContentCellID = "kContentCellID"
 
-class CXContentView: UIView {
+public class CXContentView: UIView {
     
     fileprivate var childVcs : [UIViewController]
     fileprivate var parentVC : UIViewController
@@ -33,7 +33,7 @@ class CXContentView: UIView {
         return collectionView
     }()
     
-    init(_ frame: CGRect, _ controllers: [UIViewController], _ parentVC : UIViewController) {
+    public init(_ frame: CGRect, _ controllers: [UIViewController], _ parentVC : UIViewController) {
         self.childVcs = controllers
         self.parentVC = parentVC
         
@@ -41,7 +41,7 @@ class CXContentView: UIView {
         setupUI()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
@@ -58,11 +58,11 @@ extension CXContentView {
 
 extension CXContentView : UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kContentCellID, for: indexPath)
         

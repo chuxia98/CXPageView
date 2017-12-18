@@ -8,12 +8,11 @@
 
 import UIKit
 
-
-protocol CXTitleViewDelegate : class {
+public protocol CXTitleViewDelegate : class {
     func titleView(_ titleView : CXTitleView, currentIndex : Int)
 }
 
-class CXTitleView: UIView {
+public class CXTitleView: UIView {
 
     weak var delegate : CXTitleViewDelegate?
     
@@ -31,7 +30,7 @@ class CXTitleView: UIView {
         return scrollView
     }()
     
-    init(_ frame: CGRect,_ titles: [String], _ style : CXPageStyle) {
+    public init(_ frame: CGRect,_ titles: [String], _ style : CXPageStyle) {
         self.titles = titles
         self.style = style
         super.init(frame: frame)
@@ -39,7 +38,7 @@ class CXTitleView: UIView {
         setupUI()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -58,7 +57,7 @@ extension CXTitleView {
         for (i, title) in titles.enumerated() {
             let titleLabel = UILabel();
             titleLabel.text = title;
-            titleLabel.font = UIFont.systemFont(ofSize: style.fontSize)
+            titleLabel.font = style.titleFont
             titleLabel.tag = i
             titleLabel.textAlignment = .center
             titleLabel.textColor = i == 0 ? style.selectColor : style.normalColor
@@ -85,7 +84,7 @@ extension CXTitleView {
             
             if style.isScrollEnable { // 可以滚动
                 
-                w = (titles[i] as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: h), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : label.font], context: nil).width
+                w = (titles[i] as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: h), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : label.font], context: nil).width
                 
                 if i == 0 {
                     x = style.itemMargin * 0.5

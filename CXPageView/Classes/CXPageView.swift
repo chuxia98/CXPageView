@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CXPageView: UIView {
+public class CXPageView: UIView {
 
     fileprivate var titles : [String]
     fileprivate var childVcs : [UIViewController]
     fileprivate var parentVC : UIViewController
-    fileprivate var style : CXPageStyle
+    public var style : CXPageStyle
     
-    init(_ frame: CGRect, _ titles: [String], _ childVcs: [UIViewController], _ parentVC : UIViewController, _ style : CXPageStyle) {
+    public init(_ frame: CGRect, _ titles: [String], _ childVcs: [UIViewController], _ parentVC : UIViewController, _ style : CXPageStyle) {
         
         self.titles = titles
         self.childVcs = childVcs
@@ -27,7 +27,7 @@ class CXPageView: UIView {
         setupUI()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
